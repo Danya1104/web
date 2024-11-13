@@ -1,0 +1,80 @@
+/* Общие стили для всех страниц */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px; /* Базовый размер текста для страницы */
+}
+
+header {
+    background-color: #6a5acd;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Увеличенный размер заголовка */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: underline;
+    font-size: 1.2em; /* Увеличенный размер текста для навигации */
+}
+
+nav a:hover {
+    color: #ff4500;
+}
+
+h2 {
+    color: #6a5acd;
+    font-size: 2em; /* Увеличенный размер для подзаголовка */
+    margin-top: 20px;
+}
+
+table {
+    margin: auto;
+    border-spacing: 20px;
+}
+
+img {
+    border: 3px solid #6a5acd;
+    width: 100px;
+    height: 100px;
+}
+
+/* Стили для новостей */
+.news-item {
+    border: 2px solid #6a5acd;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    background-color: #fffaf0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.news-item h3 {
+    color: #ff4500;
+    font-size: 1.8em; /* Увеличенный размер для заголовков новостей */
+}
+
+.news-item h4 {
+    color: #d6ff20;
+    font-size: 1.5em;
+}
+
+.news-item h6 {
+    color: #ff003c;
+    font-size: 1.3em;
+}
+
+.news-item p {
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.1em; /* Увеличенный размер текста для параграфов */
+}

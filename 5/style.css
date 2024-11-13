@@ -1,0 +1,6 @@
+.nav-item {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    width: 200px;
+}

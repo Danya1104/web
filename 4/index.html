@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form-container" onsubmit="return handleFormSubmit()" method="POST">
+        <div class="row">
+            <div class="form-field">
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+            <div class="form-field">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-field">
+                <label for="login">Логин:</label>
+                <input type="text" id="login" name="login">
+            </div>
+            <div class="form-field">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-field">
+                <label>Выберите время:</label>
+                <label><input type="radio" name="time" value="09-10"> 9:00 - 10:30</label>
+                <label><input type="radio" name="time" value="10-11"> 10:40 - 12:10</label>
+                <label><input type="radio" name="time" value="13-14"> 13:00 - 14:30</label>
+                <label><input type="radio" name="time" value="14-16"> 14:40 - 16:10</label>
+                <label><input type="radio" name="time" value="16-17"> 16:20 - 17:50</label>
+            </div>
+            <div class="form-field">
+                <label>Выберите форму контроля:</label>
+                <label><input type="checkbox" name="control" value="test"> Тест</label>
+                <label><input type="checkbox" name="control" value="interview"> Собеседование</label>
+                <label><input type="checkbox" name="control" value="control"> Контрольная работа</label>
+                <label><input type="checkbox" name="control" value="essay"> Эссе</label>
+                <label><input type="checkbox" name="control" value="inpedent"> Самостоятельная работа</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-field">
+                <label for="subject">Выберите предмет:</label>
+                <select id="subject" name="subject">
+                    <option value="math">Математика</option>
+                    <option value="inf">Информатика</option>
+                    <option value="eng">Английский язык</option>
+                    <option value="rus">Русский язык</option>
+                    <option value="chem">Химия</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="verification">Проверить введенные данные:</label>
+                <input type="text" id="verification" name="verification">
+            </div>
+        </div>
+        <div class="form-field">
+            <label for="info">Дополнительная информация:</label>
+            <textarea id="info" name="info"></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <!-- Подключение внешнего файла script.js -->
+    <script src="script.js"></script>
+</body>
+</html>

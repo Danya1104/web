@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семантическая разметка - Города России</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="page_header">
+        <h1>Информация о городах России</h1>
+    </header>
+    <nav id="city-nav">
+        <ul>
+            <li><a href="https://ru.wikipedia.org/wiki/Москва">Москва</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Санкт-Петербург">Санкт-Петербург</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Новосибирск">Новосибирск</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Екатеринбург">Екатеринбург</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Казань">Казань</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="map-section">
+            <h2>Карта с отметками городов</h2>
+            <div class="map-container" style="position: relative; width: 520px; height: 251px;">
+                <img src="Рисунок1.gif" alt="Карта России" usemap="#russia-map" style="width: 100%; height: auto;">
+                <div style="position: absolute; top: 81px; left: 85px; width: 10px; height: 10px; background-color: purple; border-radius: 50%;"></div> <!-- Москва -->
+                <div style="position: absolute; top: 43px; left: 105px; width: 10px; height: 10px; background-color: purple; border-radius: 50%;"></div> <!-- Санкт-Петербург -->
+                <div style="position: absolute; top: 182px; left: 217px; width: 10px; height: 10px; background-color: purple; border-radius: 50%;"></div> <!-- Новосибирск -->
+                <div style="position: absolute; top: 140px; left: 148px; width: 10px; height: 10px; background-color: purple; border-radius: 50%;"></div> <!-- Екатеринбург -->
+                <div style="position: absolute; top: 117px; left: 112px; width: 10px; height: 10px; background-color: purple; border-radius: 50%;"></div> <!-- Казань -->
+            </div>
+            <map name="russia-map">
+                <area shape="circle" coords="85,81,10" href="https://ru.wikipedia.org/wiki/Москва" alt="Москва">
+                <area shape="circle" coords="105,43,10" href="https://ru.wikipedia.org/wiki/Санкт-Петербург" alt="Санкт-Петербург">
+                <area shape="circle" coords="217,182,10" href="https://ru.wikipedia.org/wiki/Новосибирск" alt="Новосибирск">
+                <area shape="circle" coords="148,140,10" href="https://ru.wikipedia.org/wiki/Екатеринбург" alt="Екатеринбург">
+                <area shape="circle" coords="112,117,10" href="https://ru.wikipedia.org/wiki/Казань" alt="Казань">
+            </map>
+        </section>
+        <section id="photo-collage">
+            <h2>Фотоколлаж городов</h2>
+            <div style="position: relative;">
+                <div style="position: relative; width: 200px; height: 200px; z-index: 2; background-color: #FFFF00;">
+                    <img src="moscow.jpg" alt="Москва" style="width: 100%; height: auto;">
+                </div>
+                <div style="position: relative; width: 200px; height: 200px; left: 100px; z-index: 3; top: -100px; background-color: #00FFFF;">
+                    <img src="piter.jpg" alt="Санкт-Петербург" style="width: 100%; height: auto;">
+                </div>
+                <div style="position: relative; left: 220px; top: -400px; width: 200px; height: 200px; z-index: 4; background-color: #00FF00;">
+                    <img src="novosib.jpg" alt="Новосибирск" style="width: 100%; height: auto;">
+                </div>
+                <div style="position: relative; width: 750px; height: 100px; z-index: 5; top: -580px; background-color: #FE76AF;">
+                    <img src="ekaterin.jpg" alt="Екатеринбург" style="width: 100%; height: auto;">
+                </div>
+                <div style="position: relative; top: -550px; z-index: 1; left: 100px;">
+                    <img src="kazan.jpg" alt="Казань" style="width: 100%; height: auto;">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="page_footer">
+        <p>Все права защищены @2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphical Navigation Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startImageRotation()">
+    <div class="nav-bar">
+        <img class="nav-item" src="D:/web/5/bus.gif" alt="Bus Navigation" 
+             onmouseover="changeImage(this, 'D:/web/5/bus1.gif')" 
+             onmouseout="changeImage(this, 'D:/web/5/bus.gif')">
+             
+        <img class="nav-item" src="D:/web/5/city.gif" alt="City Navigation" 
+             onmouseover="changeImage(this, 'D:/web/5/city1.gif')" 
+             onmouseout="changeImage(this, 'D:/web/5/city.gif')">
+             
+        <img class="nav-item" src="D:/web/5/edu.gif" alt="Education Navigation" 
+             onmouseover="changeImage(this, 'D:/web/5/edu1.gif')" 
+             onmouseout="changeImage(this, 'D:/web/5/edu.gif')">
+             
+        <img class="nav-item" src="D:/web/5/inet.gif" alt="Internet Navigation" 
+             onmouseover="changeImage(this, 'D:/web/5/inet1.gif')" 
+             onmouseout="changeImage(this, 'D:/web/5/inet.gif')">
+             
+        <img class="nav-item" src="D:/web/5/real.gif" alt="Real Estate Navigation" 
+             onmouseover="changeImage(this, 'D:/web/5/real1.gif')" 
+             onmouseout="changeImage(this, 'D:/web/5/real.gif')">
+             
+        <img class="nav-item" src="D:/web/5/tour.gif" alt="Tour Navigation" 
+             onmouseover="changeImage(this, 'D:/web/5/tour1.gif')" 
+             onmouseout="changeImage(this, 'D:/web/5/tour.gif')">
+    </div>
+
+    <br><br>
+
+    <!-- Dropdown for image selection -->
+    <label for="imageSelector">Choose an image to display:</label>
+    <select id="imageSelector" onchange="changeSelectedImage()">
+        <option value="D:/web/5/bus.gif">Bus</option>
+        <option value="D:/web/5/city.gif">City</option>
+        <option value="D:/web/5/edu.gif">Education</option>
+        <option value="D:/web/5/inet.gif">Internet</option>
+        <option value="D:/web/5/real.gif">Real Estate</option>
+        <option value="D:/web/5/tour.gif">Tour</option>
+    </select>
+    <br><br>
+    <img id="selectedImage" src="D:/web/5/bus.gif" alt="Selected Image">
+
+    <script src="script.js"></script>
+</body>
+</html>

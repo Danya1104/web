@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Контейнеры</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="targetblack" class="black-container" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
+        <div id="1DragElement" class="element black" ondragstart="return dragStart(event)" ondragend="return dragEnd(event)" draggable="true">Text 1</div>
+        <div id="2DragElement" class="element black" ondragstart="return dragStart(event)" ondragend="return dragEnd(event)" draggable="true">Text 2</div>
+        <div id="3DragElement" class="element green" ondragstart="return dragStart(event)" ondragend="return dragEnd(event)" draggable="true">Text 3</div>
+        <div id="4DragElement" class="element green" ondragstart="return dragStart(event)" ondragend="return dragEnd(event)" draggable="true">Text 4</div>
+        <div id="5DragElement" class="element blue" ondragstart="return dragStart(event)" ondragend="return dragEnd(event)" draggable="true">Text 5</div>
+        <div id="6DragElement" class="element blue" ondragstart="return dragStart(event)" ondragend="return dragEnd(event)" draggable="true">Text 6</div>
+    </div>
+    <div id="targetgreen" class="green-container" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+    <div id="targetblue" class="blue-container" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+    <script src="script.js"></script>
+</body>
+</html>
